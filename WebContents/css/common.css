@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 전체 적용 기본설정 */
+*      { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+body   { font-family: 'Malgun Gothic'; }
+a      { text-decoration: none; }
+table  { border-collapse: collapse; border-spacing: 0; }
+
+/* 쇼핑몰 회원관리 1.9 + 메뉴 */
+.logo   { height: 80px; background: #09f; color: #fff; line-height: 80px; text-align: center; }
+.gnb    { height: 40px; line-height: 40px; text-align: center; background: #06f; }  /* 메뉴 */  /* background 숫자가 줄어들수록 연한색 */
+.gnb ul { display: inline-block; }
+.gnb ul:after 
+        { content:""; display: block; clear: both; }
+.gnb li { float: left; }
+.gnb a  { display: block; padding: 0 40px; color: #fff; font-size: 17px; transition:0.3s; }
+.gnb a:hover  
+        { background: #09f; }
+.footer { text-align: center; background: #666; color: #fff; padding: 20px 0; text-transform: uppercase; font-size: 10px;} 
+
+/* 본문 내용 */
+.container  { background: #f5f5f5; padding: 50px; }
+.content    { width: 800px; margin: 0 auto; background: #fff; padding: 20px; font-size: 13px; }
+.content h2 { margin-bottom: 20px; text-align: center; }
+.content table 
+            { border-top: 2px solid #666; width: 100%; }
+.content td, .content th
+            { height: 40px; border-bottom: 1px solid #ddd; padding: 0 10px; }
+.content th { background: #f5f5f5; }
+.content input[type=text]
+            { height: 30px; border: 1px solid #ddd; padding: 0 10px; }
+            
+/* 등록 조회 버튼 */
+.btn_group { margin-top: 20px; text-align: center; }
+.btn_group botton
+           { width: 80px; height: 30p; border: none; background: #444; color: #fff }
